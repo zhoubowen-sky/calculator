@@ -1,0 +1,8 @@
+# 这里采取先忽略所有文件，当增加文件时，在这里单独配置
+
+/*
+!.gitignore
+!www/
+!config.xml
+!package.json
+
