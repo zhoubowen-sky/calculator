@@ -1,0 +1,70 @@
+/*首页左上角菜单按钮的样式*/
+
+.home_menu {
+    position: relative;
+    height: 10%;
+}
+
+.home_menu img {
+    width: 40px;
+    height: 40px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+
+/*首页数字展示区域*/
+
+.home_data {
+    width: 100%;
+    height: 40%;
+    text-align: right;
+}
+
+
+/*历史算式及其结果*/
+
+.home_data_history {
+    width: 100%;
+    height: 40%;
+    font-size: 22px;
+}
+
+
+/*当前算式及其结果*/
+
+.home_data_now {
+    width: 100%;
+    height: 60%;
+    font-size: 40px;
+}
+
+
+/*首页键盘布局*/
+
+.home_keyboard {
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+
+.home_keyboard table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 0;
+}
+
+.home_keyboard table tr {
+    height: 60px;
+}
+
+.home_keyboard table tr td {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 22px;
+    width: 25%;
+    border: 1px solid grey;
+}
+
+
+/*键盘的按钮点击样式*/

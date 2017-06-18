@@ -1,27 +1,29 @@
 {
-  "name": "com.lingdongkuaichuan.calculator",
-  "displayName": "灵动计算器",
-  "version": "1.0.0",
-  "description": "一个WebAPP方式编写的计算器软件",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "周博文",
-  "license": "Apache-2.0",
-  "dependencies": {
-    "cordova-android": "^6.2.3",
-    "cordova-plugin-whitelist": "^1.3.2"
-  },
-  "cordova": {
-    "plugins": {
-      "cordova-plugin-whitelist": {}
+    "name": "com.lingdongkuaichuan.calculator",
+    "displayName": "灵动计算器",
+    "version": "1.0.0",
+    "description": "一个WebAPP方式编写的计算器软件",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "platforms": [
-      "android"
-    ]
-  },
-  "devDependencies": {
-    "webpack": "^2.6.1"
-  }
+    "author": "周博文",
+    "license": "Apache-2.0",
+    "dependencies": {
+        "cordova-android": "^6.1.2",
+        "cordova-plugin-whitelist": "^1.3.2",
+        "cordova-plugin-x-toast": "^2.6.0"
+    },
+    "cordova": {
+        "plugins": {
+            "cordova-plugin-whitelist": {},
+            "cordova-plugin-x-toast": {}
+        },
+        "platforms": [
+            "android"
+        ]
+    },
+    "devDependencies": {
+        "webpack": "^2.6.1"
+    }
 }

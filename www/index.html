@@ -2,73 +2,81 @@
 <html>
 
 <head>
-    <!-- Required meta tags-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
+    <link rel="stylesheet" type="text/css" href="css/app.css">
     <link rel="stylesheet" type="text/css" href="lib/css/framework7.ios.css">
+    <link rel="stylesheet" type="text/css" href="lib/css/framework7.material.css">
+    <script type="text/javascript" src="cordova.js"></script>
     <title>灵动计算器</title>
 </head>
 
 <body>
-    <!-- Status bar overlay for full screen mode (PhoneGap) -->
-    <div class="statusbar-overlay"></div>
-    <!-- Panels overlay-->
-    <div class="panel-overlay"></div>
-    <!-- Left panel with reveal effect-->
-    <div class="panel panel-left panel-reveal">
-        <div class="content-block">
-            <p>Left panel content goes here</p>
-        </div>
-    </div>
-    <!-- Views -->
     <div class="views">
-        <!-- Your main view, should have "view-main" class -->
         <div class="view view-main">
-            <!-- Top Navbar-->
-            <div class="navbar">
-                <div class="navbar-inner">
-                    <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
-                    <div class="center sliding">Awesome App</div>
-                    <div class="right">
-                        <!-- 
-                              Right link contains only icon - additional "icon-only" class
-                              Additional "open-panel" class tells app to open panel when we click on this link
-                            -->
-                        <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
-                    </div>
-                </div>
-            </div>
-            <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
-            <div class="pages navbar-through toolbar-through">
-                <!-- Page, "data-page" contains page name -->
-                <div data-page="index" class="page">
-                    <!-- Scrollable page content -->
+            <div class="pages">
+                <div class="page" data-page="home">
                     <div class="page-content">
-                        <p>Page content goes here</p>
-                        <!-- Link to another page -->
-                        <a href="about.html">About app</a>
-                        <div id="aaa" class="aaa">
-                            aaaaaaa
+
+                        <div class="home_menu" id="home_menu">
+                            <img src="img/ic_menu.png" alt="" class="">
+                        </div>
+
+                        <div class="home_data">
+                            <div class="home_data_history">
+                                历史结果
+                            </div>
+                            <div class="home_data_now">
+                                本算式结果
+                            </div>
+                        </div>
+
+                        <div class="home_keyboard">
+                            <!--这里设置一个表格-->
+                            <table>
+                                <tr>
+                                    <td id="home_c">C</td>
+                                    <td id="home_del">DEL</td>
+                                    <td id="home_division">/</td>
+                                    <td id="home_multi">*</td>
+                                </tr>
+                                <tr>
+                                    <td id="home_seven">7</td>
+                                    <td id="home_eight">8</td>
+                                    <td id="home_nine">9</td>
+                                    <td id="home_sub">-</td>
+                                </tr>
+                                <tr>
+                                    <td id="home_four">4</td>
+                                    <td id="home_five">5</td>
+                                    <td id="home_six">6</td>
+                                    <td id="home_plus">+</td>
+                                </tr>
+                                <tr>
+                                    <td id="home_one">1</td>
+                                    <td id="home_two">2</td>
+                                    <td id="home_three">3</td>
+                                    <td id="home_equal" rowspan="2">=</td>
+                                </tr>
+                                <tr>
+                                    <td id="home_percent">%</td>
+                                    <td id="home_zero">0</td>
+                                    <td id="home_point">.</td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Bottom Toolbar-->
-            <div class="toolbar">
-                <div class="toolbar-inner">
-                    <!-- Toolbar links -->
-                    <a href="#" class="link">Link 1</a>
-                    <a href="#" class="link">Link 2</a>
-                </div>
-            </div>
         </div>
     </div>
-    <script type="text/javascript" src="lib/js/framework7.min.js"></script>
-    <script type="text/javascript" src="cordova.js"></script>
+
+    <script type="text/javascript" src="lib/js/framework7.js"></script>
     <script type="text/javascript" src="js/my-app.js"></script>
+    <script type="text/javascript" src="model/menu/menu.js"></script>
 </body>
 
 </html>
