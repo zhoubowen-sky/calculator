@@ -5,7 +5,8 @@
     "description": "一个WebAPP方式编写的计算器软件",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "webpack": "webpack --config webpack.config.js --progress --display-modules --colors --display-reasons"
     },
     "author": "周博文",
     "license": "Apache-2.0",
